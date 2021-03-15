@@ -8,6 +8,7 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
   position: relative;
+  border: 1px solid red;
 }
 
 .header {
@@ -20,12 +21,16 @@
   margin: 0;
   padding: 0;
   background-color: gainsboro;
+  border: 1px solid red;
   /* выше установили ограничения для секции */
 }
 
 .logo {
   width: 183px;
   height: 32px;
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
 }
 
 .logo__place_header {
@@ -33,6 +38,7 @@
   top: 30px;
   left: 64px;
   z-index: 3;
+  border: 1px solid red;
 }
 
 .header__main-ilustration {
@@ -42,15 +48,20 @@
   right: 0px;
   bottom: 0px;
   z-index: 2;
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
 }
 
 .header__title {
   width: 730px;
   margin-left: 64px;
+  padding: 0;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
   z-index: 3;
+  border: 1px solid red;
 }
 
 .header__subtitle {
@@ -61,10 +72,14 @@
   line-height: 25px;
   font-weight: normal;
   z-index: 3;
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
 }
 
 .header__subtitle_link {
   text-decoration: none;
+  border: 1px solid red;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -77,12 +92,16 @@
   top: 64px;
   right: 0px;
   z-index: 1;
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
 }
 
 .description {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin: 100px 0;
+  padding: 0;
   border: 1px solid red;
 }
 
@@ -118,7 +137,7 @@
 .two-columns__paragraph {
   margin: 0;
 }
-
+/* добавлены отсутпы в description у второго параграфа */
 .paragraph_with-margins {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -128,6 +147,69 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
+}
+
+.digits {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section__title {
+  text-align: center;
+  border: 1px solid red;
+  width: 60%;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+
+}
+
+.section__subtitle {
+  border: 1px solid red;
+  text-align: center;
+  width: 60%;
+  margin-bottom: 60px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table {
+  border: 1px solid red;
+  width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.table__cell {
+  border: 1px solid red;
+  width: 250px;
+  padding: 0;
+  margin: 0;
+}
+
+.table__heading {
+  border: 1px solid red;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.table__text {
+  border: 1px solid red;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
+  margin: 20px 0 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
