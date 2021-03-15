@@ -70,6 +70,7 @@
   bottom: 30px;
   left: 64px;
   line-height: 25px;
+  font-size: 18px;
   font-weight: normal;
   z-index: 3;
   border: 1px solid red;
@@ -155,7 +156,7 @@
   margin-right: auto;
 }
 
-.section__title {
+.section-title {
   text-align: center;
   border: 1px solid red;
   width: 60%;
@@ -166,7 +167,7 @@
 
 }
 
-.section__subtitle {
+.section-subtitle {
   border: 1px solid red;
   text-align: center;
   width: 60%;
@@ -210,6 +211,62 @@
   font-weight: normal;
   padding: 0;
   margin: 20px 0 0;
+}
+
+.feynman {
+  border: 1px solid red;
+  height: 790px;
+  background-color: gainsboro;
+  margin-top: 100px;
+  position: relative;
+}
+
+.feynman__title {
+  margin: 100px auto 0;
+  padding: 0;
+  border: 1px solid red;
+  text-align: center;
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+
+.feynman__subtitle {
+  margin: 70px auto 0;
+  padding: 0;
+  border: 1px solid red;
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: relative;
+  z-index: 2;
+}
+
+.feynman__link {
+  border: 1px solid red;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 0;
+  z-index: 2;
+}
+
+.feynman__image {
+  border: 1px solid red;
+  height: 637px;
+  width: 867px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
 }
 
 /* и элемента с модификатором вида ключ-значение */
