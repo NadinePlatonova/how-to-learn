@@ -137,6 +137,7 @@
 
 .two-columns__paragraph {
   margin: 0;
+  border: 1px solid red;
 }
 /* добавлены отсутпы в description у второго параграфа */
 .paragraph_with-margins {
@@ -278,7 +279,7 @@
   overflow: hidden;
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0 0 90px;
 }
 
 .section-title_theme_dark {
@@ -299,10 +300,7 @@
 .section-subtitle_theme_dark {
   border: 1px solid red;
   width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
   color: white;
   line-height: 34px;
   font-size: 24px;
@@ -312,9 +310,7 @@
 }
 
 .table_theme_dark {
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   position: relative;
   z-index: 2;
 }
@@ -336,10 +332,6 @@
   top: 0px;
   right: -210px;
   z-index: 1;
-}
-
-.table_bottom-margin {
-  padding-bottom: 90px;
 }
 
 .footer {
@@ -381,7 +373,6 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  align-self: flex-start;
 }
 
 .footer__column_content_info {
@@ -394,16 +385,17 @@
   font-size: 18px;
   font-weight: 600;
   padding: 0;
-  margin: 0 0 20px;
+  margin: 0;
 }
 
 .footer__column-links {
   border: 1px solid red;
-  margin-top: 20px;
-  margin-bottom: 16px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 16px;
 }
 
 .footer__column-link {
@@ -413,6 +405,8 @@
   font-weight: normal;
   text-decoration: none;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__column_content_social {
