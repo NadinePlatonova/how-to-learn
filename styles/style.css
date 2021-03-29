@@ -19,7 +19,7 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  background-color: gainsboro;
+  background-color: #f2f2f2;
 }
 
 .logo {
@@ -29,7 +29,7 @@
   padding: 0;
 }
 
-.logo__place_header {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -40,8 +40,8 @@
   width: 765px;
   height: 608px;
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  right: 0;
+  bottom: 0;
   z-index: 2;
   margin: 0;
   padding: 0;
@@ -72,8 +72,9 @@
   padding: 0;
 }
 
-.header__subtitle_link {
+.header__link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -81,10 +82,10 @@
   display: flex;
   height: 568px;
   width: 568px;
-  background-color:rgb(41, 109, 236);
+  background-color: #2f80ed;
   position: absolute;
   top: 64px;
-  right: 0px;
+  right: 0;
   z-index: 1;
   margin: 0;
   padding: 0;
@@ -108,7 +109,7 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  color:blue;
+  color:#2f80ed;
   margin: 0;
   padding: 0;
 }
@@ -121,15 +122,15 @@
 }
 
 .two-columns__paragraph {
-  margin: 0;
+  margin: 0 0 30px;
   padding: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
-/* ниже добавлены отсутпы в description у второго параграфа */
-.two-columns__paragraph_with-margins {
-  margin: 30px 0;
+
+.two-columns__main-text p:last-child {
+  margin-bottom: 0;
 }
 
 .span-accent {
@@ -138,25 +139,19 @@
   font-weight: bold;
 }
 
-.digits {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .section-title {
   text-align: center;
   width: 60%;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .section-subtitle {
   text-align: center;
   width: 60%;
-  margin-bottom: 60px;
+  margin: 0 auto;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -166,23 +161,21 @@
   width: 1110px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0;
-}
-
-.table_theme_light {
-  margin: 60px auto 0;
+  margin: 0 auto;
 }
 
 .table__cell {
   width: 250px;
   padding: 0;
-  margin: 0;
+  margin: 60px 0 0;
 }
 
 .table__heading {
   line-height: 1.15;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: bold;
   padding: 0;
   margin: 0;
 }
@@ -196,20 +189,21 @@
 }
 
 .feynman {
-  height: 790px;
-  background-color: gainsboro;
+  min-height: 790px;
+  background-color: #f2f2f2;
   margin-top: 100px;
   position: relative;
+  padding: 100px 0 0;
 }
 
 .feynman__title {
-  margin: 100px auto 0;
-  padding: 100px 0 0;
+  margin: 0 auto 0;
+  padding: 0;
   text-align: center;
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
-  font-weight: 600;
+  font-weight: bold;
   position: relative;
   z-index: 2;
 }
@@ -233,6 +227,7 @@
   font-size: 36px;
   font-weight: normal;
   text-decoration: none;
+  color:#2f80ed;
   padding: 0;
   z-index: 2;
 }
@@ -241,17 +236,18 @@
   height: 637px;
   width: 867px;
   position: absolute;
-  left: 0px;
-  bottom: 0px;
+  left: 0;
+  bottom: 0;
   z-index: 1;
 }
 
 .kaufman {
-  background-color: black;
+  background-color: #1f1f1f;
   overflow: hidden;
   position: relative;
   margin: 0;
   padding: 0 0 90px;
+  z-index: 1;
 }
 
 .section-title_theme_dark {
@@ -259,7 +255,7 @@
   color: white;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: bold;
   margin: 90px auto 20px;
   text-align: center;
   padding: 0;
@@ -279,7 +275,6 @@
 .table_theme_dark {
   margin: 0 auto;
   position: relative;
-  z-index: 2;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -289,19 +284,19 @@
   margin: 80px 0 0;
 }
 
-.kaufman__triangle-image {
+.kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
   height: 877px;
   width: 877px;
   background-size: cover;
   position: absolute;
-  top: 0px;
+  top: 0;
   right: -210px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .footer {
-  background-color: black;
+  background-color: #1f1f1f;
   display: flex;
   justify-content: center;
   min-height: 350px;
@@ -315,14 +310,17 @@
   color: white;
 }
 
-.footer__column_content_copyright {
-  flex-basis: 711px;
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
   justify-content: space-between;
 }
 
-.logo__place_footer {
+.logo_place_footer {
   width: 183px;
   height: 35px;
 }
@@ -338,15 +336,13 @@
 .footer__column-heading {
   line-height: 30px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: bold;
   padding: 0;
   margin: 0;
 }
 
 .footer__column-links {
   padding: 0;
-  display: flex;
-  flex-direction: column;
   list-style-type: none;
   margin-top: 20px;
   margin-bottom: 16px;
@@ -365,5 +361,5 @@
 .footer__social-icon {
   height: 16px;
   width: 16px;
-  padding-right: 10px; 
+  padding-right: 10px;
 }
