@@ -129,11 +129,11 @@
   font-weight: normal;
 }
 
-.two-columns__main-text p:last-child {
+.two-columns__paragraph:last-child {
   margin-bottom: 0;
 }
 
-.span-accent {
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
