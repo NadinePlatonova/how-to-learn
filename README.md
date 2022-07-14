@@ -13,7 +13,7 @@ _A single page application with a description of effective approaches to learnin
 
 - CSS-animation;
 - flex layout;
-- media files and external data sources(i.e. iframe to insert a finished video from Youtube);
+- media files and external data sources (i.e. iframe to insert a finished video from Youtube);
 - Nested BEM-metodology.
 
 **Project status:**
