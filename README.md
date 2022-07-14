@@ -20,4 +20,4 @@ _A single page application with a description of effective approaches to learnin
 
 - finished.
 
-[Here is the link to web site](https://nadineplatonova.github.io/how-to-learn)
+[Here is the link to the web site](https://nadineplatonova.github.io/how-to-learn)
