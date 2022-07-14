@@ -1,20 +1,23 @@
-# How to learn (Научиться учиться)
-_Одностраничный статичный сайт с описанием эффективных и современных подходов в обучении._
+# How to learn
 
-**Основной стек:** HTML, CSS.
+_A single page application with a description of effective approaches to learning._
 
-**Основной функционал:**
-* информация о подходах в обучении с использованием анимации и внешних источников данных.
+![header screenshot](./images/preview.png)
 
-**Использованы:**
-* анимации;
-* медиафайлы и внешние источники данных (например, iframe со вставкой готового видео с Youtube);
-* организация файлов по методологии БЭМ.
+**Stack:**
 
-**Статус проекта:**
-* проект не завершен, планируются доработки.
+- HTML;
+- CSS.
 
-**Планы на доработку:**
-* добавить ссылкам якори, чтобы они ввели на конкретные места сайта.
+**Realization:**
 
-[Перейти на сайт](https://nadineplatonova.github.io/how-to-learn)
+- CSS-animation;
+- flex layout;
+- media files and external data sources(i.e. iframe to insert a finished video from Youtube);
+- Nested BEM-metodology.
+
+**Project status:**
+
+- finished.
+
+[Here is the link to web site](https://nadineplatonova.github.io/how-to-learn)
